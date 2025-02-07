@@ -1,6 +1,7 @@
 // Q5. Rotate the matrix by 90 degrees.
 
 #include<iostream>
+#include<iomanip>
 using namespace std;
 int main()
 {
@@ -20,7 +21,7 @@ int main()
     {
         for(int c=0;c<n;c++)
         {
-            cout<<arr[r][c]<<" ";   
+            cout<<fixed<<setw(4)<<arr[r][c]<<" ";   
         }
         cout<<endl;
     }
@@ -29,7 +30,7 @@ int main()
     {
         for(int r=m-1;r>=0;r--)
         {
-            cout<<arr[r][c]<<" ";
+            cout<<fixed<<setw(4)<<arr[r][c]<<" ";
         }
         cout<<endl;
     }
